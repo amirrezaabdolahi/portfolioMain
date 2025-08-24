@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           {/* photo */}
           <div className="mb-6 xl:mb-0">
-            <Photo/>
+            <Photo />
           </div>
         </div>
       </div>

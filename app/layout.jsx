@@ -11,8 +11,15 @@ const JetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Amire Abdollhai Portfolio",
-  description: "Hi this is my portfolio everything to know me is in this web . so why you'r looking my meta data ha!!!!",
+  title: {
+    template: "Amire Abdollhai | %s",
+    default: "Amire Abdollhai",
+  },
+  description:
+    "Hi this is my portfolio everything to know me is in this web . so why you'r looking my meta data ha!!!!",
+  icons: {
+    icon: "/favicon.ico", // or "/favicon.png"
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={JetBrainsMono.variable}>
         <Header />
-        <StairTransition/>
+        <StairTransition />
         <PageTransion>{children}</PageTransion>
       </body>
     </html>
