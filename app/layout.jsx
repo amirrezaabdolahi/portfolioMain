@@ -27,9 +27,10 @@ export const metadata = {
     siteName: "Amireza Abdolahi Portfolio",
     images: [
       {
-        url: "/assets/profile.jpg", // place preview.png in public/ folder
+        url: "https://amirrezaabdollahi.vercel.app/assets/profile.jpg", // place preview.png in public/ folder
         width: 800,
         height: 600,
+        alt : "AmirrezaAbdollahi profile image"
       },
     ],
     locale: "en_US",
