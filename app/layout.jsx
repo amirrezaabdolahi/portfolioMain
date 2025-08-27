@@ -20,6 +20,21 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico", // or "/favicon.png"
   },
+  openGraph: {
+    title: "Amireza Abdolahi | Frontend Developer",
+    description: "Check out my portfolio projects",
+    url: "https://amirrezaabdollahi.vercel.app/",
+    siteName: "Amireza Abdolahi Portfolio",
+    images: [
+      {
+        url: "/assets/profile.jpg", // place preview.png in public/ folder
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
