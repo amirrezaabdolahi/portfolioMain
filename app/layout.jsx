@@ -44,6 +44,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="googlebb73bf99f0322451" />
       <body className={JetBrainsMono.variable}>
         <Header />
         <StairTransition />
