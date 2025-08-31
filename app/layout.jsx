@@ -30,11 +30,14 @@ export const metadata = {
         url: "https://amirrezaabdollahi.vercel.app/assets/profile.jpg", // place preview.png in public/ folder
         width: 800,
         height: 600,
-        alt : "AmirrezaAbdollahi profile image"
+        alt: "AmirrezaAbdollahi profile image"
       },
     ],
     locale: "en_US",
     type: "website",
+  },
+  verification: {
+    google: "googlebb73bf99f0322451",
   },
 };
 
