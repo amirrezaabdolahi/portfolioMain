@@ -35,16 +35,13 @@ export const metadata = {
     ],
     locale: "en_US",
     type: "website",
-  },
-  verification: {
-    google: "googlebb73bf99f0322451",
-  },
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="googlebb73bf99f0322451" />
+      <meta name="google-site-verification" content="gCuxTd8cF-uuWnQinS7zVuozhF0jsHD45i-GHal3tr8" />
       <body className={JetBrainsMono.variable}>
         <Header />
         <StairTransition />
