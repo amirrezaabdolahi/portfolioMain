@@ -62,6 +62,17 @@ const projects = [
     live: "https://amirenzeva.github.io/clinico-1/",
     github: "https://github.com/AmirEnzeva/clinico-1",
   },
+  {
+    num: "05",
+    category: "frontend",
+    title: "samin",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae aperiam nostrum.",
+    stack: [{ name: "Nextjs" }, { name: "MUI" }],
+    image: "/assets/work/samin.jpg",
+    live: "https://samin-gypsum.vercel.app/",
+    github: "https://github.com/amirrezaabdolahi/samin-gypsum",
+  },
 ];
 
 const Work = () => {
