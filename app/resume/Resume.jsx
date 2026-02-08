@@ -181,7 +181,7 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col justify-center w-full max-w-[380px] mx-auto xl:mx-0 gap-6 ">
-            <h2 className="text-4xl font-bold text-white">Why hire me ?</h2>
+            <h1 className="text-4xl font-bold text-white">Why hire me ?</h1>
             <p className="text-white/60 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>

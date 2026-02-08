@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="flex flex-col-reverse xl:flex-row  gap-14">
           <div className="xl:w-[54%] bg-[#27272c] rounded-xl">
             <form className="flex flex-col gap-6 p-10 ">
-              <h2 className="text-accent text-4xl">Let's work togrther</h2>
+              <h1 className="text-accent text-4xl">Let's work togrther</h1>
               <p className="text-white/60 ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
