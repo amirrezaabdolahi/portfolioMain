@@ -94,7 +94,7 @@ const Contact = () => {
                   <div>
                     <p className="text-white/60">{item.title}</p>
                     {item.title === "Phone" ? (
-                      <Link href={`tel:0${item.description.slice(6 , -1)}`}>{item.description}</Link>
+                      <Link href={`tel:0${item.description.slice(6)}`}>{item.description}</Link>
                     ) : (
                     <h3 className="text-xl ">{item.description}</h3>
                     )}
