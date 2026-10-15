@@ -11,6 +11,7 @@ export const metadata = {
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import DownloadCvBtn from "@/components/DownloadCvBtn";
 
 export default function Home() {
   return (
@@ -30,14 +31,7 @@ export default function Home() {
               web technologies.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="flex items-center gap-2 uppercase"
-              >
-                <span>Download CV</span>
-                <FiDownload />
-              </Button>
+              <DownloadCvBtn />
               <div>
                 <Socials
                   containerStyle="flex items-center gap-6"
