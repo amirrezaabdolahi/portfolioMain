@@ -21,10 +21,10 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Basic portfolio",
+    title: "Personal Portfolio Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae aperiam nostrum.",
-    stack: [{ name: "html5" }, { name: "CSS" }, { name: "javascript" }],
+      "A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects, introduce the developer, and provide an accessible way for visitors to explore their work.",
+    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "JavaScript" }],
     image: "/assets/work/basicportfolio.jpg",
     live: "https://amirenzeva.github.io/darkweb/",
     github: "https://github.com/amirenzeva/darkweb",
@@ -32,10 +32,10 @@ const projects = [
   {
     num: "02",
     category: "fullstack",
-    title: "Chat app",
+    title: "Real-Time Chat Application",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae aperiam nostrum.",
-    stack: [{ name: "React" }, { name: "Node.js" }, { name: "express" }],
+      "A full-stack chat application built with React, Node.js, and Express. The project explores client-server communication and provides a foundation for building interactive messaging experiences.",
+    stack: [{ name: "React" }, { name: "Node.js" }, { name: "Express.js" }],
     image: "/assets/work/chatapp.jpg",
     live: "https://chat-app-zhvy.onrender.com/",
     github: "https://github.com/amirrezaabdolahi/chat-app",
@@ -43,9 +43,9 @@ const projects = [
   {
     num: "03",
     category: "frontend",
-    title: "Portfolio",
+    title: "React Portfolio Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae aperiam nostrum.",
+      "A portfolio website developed with React to present personal projects and development work through a component-based frontend architecture.",
     stack: [{ name: "React" }],
     image: "/assets/work/portfolio.jpg",
     live: "https://amirrezaabdolahi.github.io/portfolioS/",
@@ -54,9 +54,9 @@ const projects = [
   {
     num: "04",
     category: "frontend",
-    title: "clinico",
+    title: "Clinico",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae aperiam nostrum.",
+      "A healthcare-themed frontend project developed as part of a team. It provides an opportunity to explore interface design, reusable React components, and the presentation of healthcare-related information.",
     stack: [{ name: "React" }],
     image: "/assets/work/clinico.jpg",
     live: "https://amirenzeva.github.io/clinico-1/",
@@ -65,13 +65,28 @@ const projects = [
   {
     num: "05",
     category: "frontend",
-    title: "samin",
+    title: "Samin Gypsum",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae aperiam nostrum.",
-    stack: [{ name: "Nextjs" }, { name: "MUI" }],
+      "A business website for Samin Gypsum, built with Next.js and Material UI to present the company and its gypsum-related business in a dedicated web experience.",
+    stack: [{ name: "Next.js" }, { name: "Material UI" }],
     image: "/assets/work/samin.jpg",
     live: "https://samin-gypsum.vercel.app/",
     github: "https://github.com/amirrezaabdolahi/samin-gypsum",
+  },
+  {
+    num: "06",
+    category: "frontend",
+    title: "Vista Team",
+    description:
+      "A website for Vista Team, built with Next.js, Tailwind CSS, and shadcn/ui. The project focuses on presenting the team and its work through a modern, component-based web interface.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "shadcn/ui" },
+    ],
+    image: "/assets/work/vistateam.jpg",
+    live: "https://www.vistateam.tech/",
+    github: "https://github.com/amirrezaabdolahi/vistaportfolio",
   },
 ];
 
@@ -101,6 +116,7 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-outline text-transparent">
                 {project.num}
               </div>
+              
               {/* category */}
               <h2 className="text-[42px] font-bold text-white leading-none group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
@@ -157,13 +173,13 @@ const Work = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide className="w-full" key={index}>
-                  <div className="h-[460px] group flex justify-center items-center relative bg-pink-50/20">
+                  <div className="h-[460px] group rounded flex justify-center items-center relative bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full flex items-center justify-center">
                       <Image
                         src={project.image}
                         alt={project.title}
-                        className="object-cover select-none"
+                        className="object-cover select-none rounded "
                         fill
                       />
                     </div>
