@@ -1,30 +1,48 @@
 import Link from "next/link";
-import React from "react";
-
 import {
   FaGithub,
-  FaYoutube,
-  FaTwitter,
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com/amirrezaabdolahi" },
-  { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
-  { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/amireza-abdolahi-283710349?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-  { icon: <FaInstagram />, path: "https://instagram.com/maybe_im_amirreza?vrfl=YXRha3JrODBnMW8z" },
+  {
+    icon: FaGithub,
+    label: "GitHub",
+    path: "https://github.com/amirrezaabdolahi",
+  },
+  {
+    icon: FaLinkedin,
+    label: "LinkedIn",
+    path: "https://www.linkedin.com/in/amireza-abdolahi-283710349",
+  },
+  {
+    icon: FaInstagram,
+    label: "Instagram",
+    path: "https://instagram.com/maybe_im_amirreza",
+  },
 ];
 
 const Socials = ({ containerStyle, iconStyle }) => {
   return (
     <div className={containerStyle}>
-      {socials.map((item, index) => (
-        <Link href={item.path} key={index} className={iconStyle}>
-          {item.icon}
-        </Link>
-      ))}
+      {socials.map((item) => {
+        const Icon = item.icon;
+
+        return (
+          <Link
+            key={item.label}
+            href={item.path}
+            aria-label={item.label}
+            title={item.label}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={iconStyle}
+          >
+            <Icon aria-hidden="true" />
+          </Link>
+        );
+      })}
     </div>
   );
 };
